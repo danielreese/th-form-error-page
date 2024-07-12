@@ -1,0 +1,109 @@
+<!-- 
+
+
+        ||||||||||||| |||||||||||| ||||||||||||      ||||||
+        ||||||||||||| |||||||||||| ||||||||||||      ||||||
+        ||||      ||| ||||    ||||     |||           ||||||
+        ||||      ||| ||||             |||
+        ||||      ||| ||||||||||||     |||     ||||| |||||| |||||
+        ||||||||||||| ||||||||||||     |||     ||||| |||||| |||||
+        |||||||||||||         ||||     |||     ||||| |||||| |||||
+        ||||                  ||||     |||
+        ||||          ||||    ||||     |||           ||||||
+        ||||          |||||||||||| ||||||||||||      ||||||
+        ||||          |||||||||||| ||||||||||||      ||||||
+
+
+-->
+<!-- 
+Common Assistive Technologies:
+    - Screen Reader
+    - Screen Magnifiers
+    - Switch Controls
+    - Closed Captioning
+
+    American with Disabilities Act, Title III
+    - Websites and apps are "places of public accommodation"
+    - Prevents discrimination against people with disabilities.
+
+WCAG Perceivable Principle
+
+Text alternatives
+Captions and transcripts
+Use semantic HTML
+Portrait and landscape orientation
+Sufficient color contrast
+Combine multiple visual cues, not just color
+Avoid auto starting audio or video
+Responsive body copy
+Legible at 200% zoom
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Performance Science International Form Template made by Performance Science International Web Developers to test new Forms">
+    <title>PSI | Form Template</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,900;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9ea01192cb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <div class="container">
+                <img src="./Assets/default-logo.png" alt="Default Image Placeholder for PSI Form Template" id="logo-img">
+                <span id="logo-text">PSI+ Apparel</span>
+            </div>
+        </div>
+        <nav class="container">
+            <ul class="nav-flex">
+                <li><a href="index.html">Info</a></li>
+                <li><a>Billing</a></li>
+                <li><a>Review</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div id="summary">
+                <i class="fa-solid fa-shirt"></i>
+                <div class="summary-text">
+                    <p>Delivery Expected between July 11, 2024 - July 18, 2024</p>
+                    <p>5 items, $100.99</p>
+                </div>
+            </div>
+            <!-- Form Goes Here -->
+             <form>
+                <fieldset>
+                    <legend>Shipping Information</legend>
+                    <p class="hint">* - required field</p>
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="user-name">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="user-email">
+                    <p class="hint">Receipt will be sent to this address.</p>
+                    <label for="address1">Street Address *</label>
+                    <input type="text" id="address1" name="user-address1">
+                    <label for="address2">Apartment/Office Number</label>
+                    <input type="text" id="address2" name="user-address2">
+                    <label for="zip">Zip Code *</label>
+                    <!-- Use Javascript to look up city and state based on zip code -->
+                    <input type="text" id="zip" name="user-zip">
+                    <p class="hint">City and state will be looked up from Zip Code</p>
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="user-phone">
+                    <p class="hint">No phone? Include alternate contact below.</p>
+                    <label for="delivery-instructions">Delivery Instructions</label>
+                    <textarea name="user-delivery-instructions" id="delivery-instructions"></textarea>
+                    <button type="submit">Continue</button>
+                </fieldset>
+             </form>
+        </div>
+    </main>
+</body>
+</html>
